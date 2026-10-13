@@ -1,0 +1,71 @@
+.language-selector-wrapper {
+  display: inline-flex;
+  align-items: center;
+}
+
+.language-selector-wrapper .sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.language-selector-box {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: #f8faf8;
+  border: 1px solid #cfe0d1;
+  border-radius: 99px;
+  padding: 4px 10px;
+  transition: all 0.2s ease;
+}
+
+.language-selector-box:focus-within {
+  border-color: #287b3d;
+  box-shadow: 0 0 0 3px rgba(40, 123, 61, 0.15);
+  background: #ffffff;
+}
+
+.language-globe-icon {
+  font-size: 14px;
+  line-height: 1;
+  user-select: none;
+}
+
+.language-select-input {
+  background: transparent;
+  border: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: #17221a;
+  outline: none;
+  cursor: pointer;
+  padding: 2px 4px;
+}
+
+.language-select-input option {
+  background: #ffffff;
+  color: #17221a;
+  font-weight: 500;
+}
+
+/* Dark Theme Adaptations */
+.app.dark-theme .language-selector-box {
+  background: #162719;
+  border-color: #233d27;
+}
+
+.app.dark-theme .language-select-input {
+  color: #e2ede4;
+}
+
+.app.dark-theme .language-select-input option {
+  background: #162719;
+  color: #e2ede4;
+}
